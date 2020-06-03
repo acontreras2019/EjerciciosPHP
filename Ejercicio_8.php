@@ -12,6 +12,7 @@ header ("Content-type: text/html;charset =\"utf-8\"");
  PRIMO O NO */
  if (is_numeric($_GET['numero']) && $_GET ['numero']=>1)
  {
+    $primo=0;
  $valingres= (int) $_GET['numero'];
     for($b =2;$b<=$valingres; $b++)
     {
@@ -25,7 +26,7 @@ if($primo >= 2 ){
 } else {
     echo "Es primo";
 }
- }
+}
 ?>
 
 <form>
