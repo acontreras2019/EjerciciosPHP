@@ -11,6 +11,7 @@
         <li><a href="ejercicio_5.php" target ="_new">ejercicio 5</a> </li>
         <li><a href="ejercicio_6.php" target ="_new">ejercicio 6</a> </li>
         <li><a href="ejercicio_7.php" target ="_new">ejercicio 7</a> </li>
+        <li><a href="ejercicio_8.php" target ="_new">ejercicio 8</a> </li>
 </ul>
 </body>
 </html>
