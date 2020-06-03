@@ -21,9 +21,16 @@ header ("Content-type: text/html;charset =\"utf-8\"");
         $primo++;
     }
     }
-if($primo >= 2 ){
+else
+{
+    echo "INGRESE NUMERO VALIDO";  
+}
+if($primo >= 2 )
+{
     echo "No es primo";
-} else {
+} 
+else 
+{
     echo "Es primo";
 }
 }
