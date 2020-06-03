@@ -10,30 +10,49 @@ header ("Content-type: text/html;charset =\"utf-8\"");
 
 /*EVALUAR SI UN NUMERO ES:
  PRIMO O NO */
+ 
+
  if (is_numeric($_GET['numero']) && $_GET ['numero']=>1)
  {
-    $primo=0;
- $valingres= (int) $_GET['numero'];
-    for($b =2;$b<=$valingres; $b++)
-    {
-    if($valingres % $b == 0)
-    {
-        $primo++;
-    }
-    }
-else
-{
-    echo "INGRESE NUMERO VALIDO";  
+    $valor= (int) $_GET['numero'];
+    do {
+        if (n > 1)
+          if (EsPrimo(n)){
+            echo  "ES PRIMO";
+          }
+          else   
+          {     
+          echo  "NOOOOOO ES PRIMO";
+            }
 }
-if($primo >= 2 )
+ else
+ {
+    echo "Ingrese un numero valido";
+ }
+//fUNCION
+int EsPrimo ($num)
 {
-    echo "No es primo";
-} 
-else 
-{
-    echo "Es primo";
+  int $i;
+  int $primo; /* Variable lógica que guarda si es primo o no */
+
+  $primo = true; /* Mientras no encontremos un un divisor es primo */
+  $i = 2;
+  while ($i < $valingres && $num) 
+    if ($num%$i == 0){
+      $primo = False; /* Si tiene un divisor no es primo */
+    $i++;
+  }
+  return $primo; /* Devuelve resultado: primo */
 }
-}
+
+
+
+
+
+
+
+
+
 ?>
 
 <form>
