@@ -25,6 +25,7 @@ if($primo >= 2 ){
 } else {
     echo "Es primo";
 }
+ }
 ?>
 
 <form>
