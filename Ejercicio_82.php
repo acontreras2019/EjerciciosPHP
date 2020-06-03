@@ -15,6 +15,7 @@ header ("Content-type: text/html;charset =\"utf-8\"");
  if (is_numeric($_GET['numero']) && $_GET ['numero']=>1)
  {
     $valor= (int) $_GET['numero'];
+    $n=0;
     do {
         if (n > 1)
           if (EsPrimo(n)){
